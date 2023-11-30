@@ -79,9 +79,13 @@ button{
 }
 .b-logo{
     position: relative;
-    bottom: 790px;
+    bottom: 750px;
     margin-left: 110px;
     width: 500px;
+}
+.b-logo img{
+    width: 75%;
+    height: 50%;
 }
 .container{
     position: relative;
@@ -91,10 +95,10 @@ button{
 }
 .container h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
+    font-size: 80px;
 }
 .container p{
-    font-size: 34px;
+    font-size: 25px;
 }
 .c-button{
     margin-left: 110px;
