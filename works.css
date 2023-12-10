@@ -52,16 +52,13 @@ button{
     height: 100%;
     
 }
-.message{
-    width: 100%;
-    height: 100vh;
-}
 .g-content{
     width: 100%;
-    height: 300vh;
+    height: 620vh;
     display: flex;
     justify-content: center;
     background-color: black;
+    margin-top: -10px;
 }
 .category{
     margin-top: 50px;
@@ -139,11 +136,115 @@ button{
 .shadow:hover img{
     filter: brightness(0.3);
 }
-#photo, #graphic{
+#photo, #graphic, #video{
     margin-top: 30px;
     color: white;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.v-container{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+.vids{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid-holder{
+    margin-top: 200px;
+    width: 100%;
+    height: 90vh;
+    background-color: antiquewhite;
+    display: flex;
+    overflow: hidden;
+}
+.vid-holder a{
+    text-decoration: none;
+    color: white;
+}
+.links{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.links h1{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition: 0.5s;
+    font-size: 50px;
+}
+.links h1:hover{
+    color: red;
+}
+.vid-holder div:hover .links{
+    display: block;
+    background-color: #181818a8;
+    color: white;
+}
+.vid-holder div:hover .links h1{
+    color: white;
+}
+.button-dot{
+    margin-top: 230px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.button-dot input{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-style: none;
+    background-color: #747474;
+    transition: 0.3s;
+}
+#bt1{
+    background-color: #b4b4b4;
+}
+.button-dot input:hover{
+    background-color: #b4b4b4;
+}
+.box1{
+    background-image: url(img19.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box2{
+    background-image: url(img20.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box3{
+    background-image: url(img21.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.box4{
+    background-image: url(img22.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.vid-holder div{
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+    transition: 0.5s;
+}
+#pht-1{
+    transform: translateX(0);
 }
 .ref{
+    margin-top: 645vh;
     width: 100%;
     height: 50vh;
     align-items: center;
@@ -176,6 +277,14 @@ button{
 .c3{
     width: 150px;
 }
+.crt{
+    margin-left: 5%;
+    font-size: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    position: relative;
+    bottom: 30px;
+}
 .c3 p{
     margin-top: 20px;
     line-height: 30px;
@@ -201,7 +310,15 @@ button{
 .socapp ul{
     display: flex;
 }
-.socapp ul li{
+.socapp ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+.socapp ul li:hover a{
+    color: white;
+}
+.socapp ul a{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
@@ -215,7 +332,7 @@ button{
     border-radius: 10px;
     transition: 0.3s;
 }
-.socapp ul li:hover{
+.socapp ul a:hover{
     background-color: black;
     color: white;
 }
